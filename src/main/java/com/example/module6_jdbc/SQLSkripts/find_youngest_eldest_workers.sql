@@ -1,21 +1,3 @@
--- Найстарший працівник
-SELECT NAME,
-       BIRTHDAY,
-       EXTRACT(YEAR FROM AGE(CURRENT_DATE, BIRTHDAY)) AS AGE
-FROM worker
-ORDER BY BIRTHDAY ASC
-LIMIT 1;
-
--- Наймолодший працівник
-SELECT NAME,
-       BIRTHDAY,
-       EXTRACT(YEAR FROM AGE(CURRENT_DATE, BIRTHDAY)) AS AGE
-FROM worker
-ORDER BY BIRTHDAY DESC
-LIMIT 1;
-
-
--- Об'єднано для отримання найстаршого та наймолодшого працівника
 WITH RankedWorkers AS (SELECT NAME,
                               BIRTHDAY,
                               RANK() OVER (ORDER BY BIRTHDAY ASC)  AS YoungestRank,

@@ -45,7 +45,6 @@ public class DatabaseInitService {
     }
 
 
-
     public static void initDataBase() throws FileNotFoundException {
         try {
             String pathFileInit = "src/Main/java/com/example/module6_jdbc/SQLSkripts/inti_db.sql";
@@ -54,23 +53,6 @@ public class DatabaseInitService {
         } catch (Exception e) {
             throw new FileNotFoundException("Файл не знайдено");
         }
-    }
-
-
-
-    public static void main(String[] args) throws FileNotFoundException {
-//        try {
-//            String pathFileInit = "src/Main/java/com/example/module6_jdbc/SQLSkripts/inti_db.sql";
-//            createTableQuery(readCreatTableQuery(pathFileInit));
-//            System.out.println("Таблиці ініціалізовано");
-//        } catch (Exception e) {
-//            throw new FileNotFoundException("Файл не знайдено");
-//        }
-
-        // чомусь виникає помилка
-//        Exception in thread "Main" java.io.FileNotFoundException
-//        at com.example.module6_jdbc.DatabaseInitService.Main(DatabaseInitService.java:56)
-
     }
 
 }

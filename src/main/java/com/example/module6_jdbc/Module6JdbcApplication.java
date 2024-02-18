@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Module6JdbcApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Module6JdbcApplication.class, args);
-    }
+//    public static void main(String[] args) {
+//        SpringApplication.run(Module6JdbcApplication.class, args);
+//    }
 
 }
